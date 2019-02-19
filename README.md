@@ -12,3 +12,6 @@ A minimal golang api for k8s workshop
 - start `make start`
 - teardown `make stop`
 - tail logs `make logs`
+
+## ENV Variables
+- `PORT`: Port on which http server should listen. Default: `8083`

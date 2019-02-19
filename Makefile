@@ -14,7 +14,7 @@ build:
 	docker build -t k8s-goose .
 
 start:
-	docker run -d -p $(PORT):$(PORT) -e PORT=$(PORT) --name k8s-goose k8s-goose
+	@docker run -d -p $(PORT):$(PORT) -e PORT=$(PORT) --name k8s-goose k8s-goose
  
 stop:
 	docker stop k8s-goose
