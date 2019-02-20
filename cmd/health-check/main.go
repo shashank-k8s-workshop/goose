@@ -11,7 +11,7 @@ func main() {
 		port = os.Getenv("PORT")
 	}
 
-	url := "http://localhost:" + port + "/goo"
+	url := "http://localhost:" + port + "/heartbeat"
 	if _, err := http.Get(url); err != nil {
 		os.Exit(1)
 	}

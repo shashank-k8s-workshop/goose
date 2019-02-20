@@ -10,6 +10,7 @@ func routes(config *config) *chi.Mux {
 	router := chi.NewRouter()
 	router.Use(
 		render.SetContentType(render.ContentTypeJSON),
+		middleware.Heartbeat("/heartbeat"),
 		middleware.Logger,
 		middleware.DefaultCompress,
 		middleware.RedirectSlashes,
