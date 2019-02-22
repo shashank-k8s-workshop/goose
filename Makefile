@@ -18,6 +18,8 @@ start:
  
 stop:
 	docker stop k8s-goose
+
+remove:
 	docker rm k8s-goose
 
 logs: 

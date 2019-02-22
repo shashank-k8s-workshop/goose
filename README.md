@@ -10,7 +10,8 @@ A minimal golang service for k8s workshop
 ### Run in docker
 - build `make build`
 - start `make start`
-- teardown `make stop`
+- stop `make stop`
+- teardown `make remove`
 - tail logs `make logs`
 
 ## ENV Variables
