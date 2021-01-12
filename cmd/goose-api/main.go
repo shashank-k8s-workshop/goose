@@ -20,5 +20,6 @@ func main() {
 		log.Panicf("Logging err: %s\n", err.Error())
 	}
 
+	log.Printf("Listening on port %s\n", config.port)
 	log.Fatal(http.ListenAndServe(":"+config.port, router))
 }
